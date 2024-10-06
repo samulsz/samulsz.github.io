@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style/catalog.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="logo-container">
+            <img src="images/logo.png" alt="Logo" height="100px" width="100px">
+        </nav>
+    </header>
+
+    <div class="image-gallery" id="image-gallery"></div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Desenvolvido com muito ❤ por samulsz. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Supondo que você tenha uma lista das imagens da pasta catalog/
+        const images = [
+            "catalog/imagem1.png",
+            "catalog/imagem2.png",
+            "catalog/imagem3.png",
+            "catalog/imagem4.png",
+            "catalog/imagem5.png",
+            "catalog/imagem6.png",
+            "catalog/imagem7.png",
+            "catalog/imagem8.png"
+        ];
+
+        const imageGallery = document.getElementById("image-gallery");
+
+        images.forEach(src => {
+            const img = document.createElement("img");
+            img.src = src;
+            img.alt = "Image from catalog";
+            img.style.width = "150px"; // Ajuste o tamanho da imagem
+            img.style.height = "250px"
+            img.style.border = "2px solid white"; // Borda branca ao redor
+            img.style.display = "inline-block"; // Colocar lado a lado
+            img.style.margin = "0"; // Sem margem, para ficarem coladas
+            img.style.transition = "transform 0.3s ease"; // Animação suave
+            imageGallery.appendChild(img);
+
+             // Usando CSS para o efeito de hover
+        img.onmouseover = () => {
+            img.style.transform = "scale(1.5)"; // Ampliar imagem ao passar o mouse
+        };
+        
+        img.onmouseout = () => {
+            img.style.transform = "scale(1)"; // Voltar ao tamanho normal ao remover o mouse
+        };
+        });
+    </script>
+</body>
+</html>

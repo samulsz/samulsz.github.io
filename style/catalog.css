@@ -15,3 +15,7 @@
 .logo-container:hover{
     transform: scale(2.05);
 }
+
+.image-gallery{
+    margin: 15px 0px 0px 15px;
+}
