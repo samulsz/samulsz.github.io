@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: rgba(247, 222, 239, 0.7);
+    justify-content: space-between; 
+    padding: 10px;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.logo-container:hover{
+    transform: scale(2.05);
+}

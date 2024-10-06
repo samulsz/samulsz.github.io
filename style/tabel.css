@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: rgba(247, 222, 239, 0.7);
+    justify-content: space-between; 
+    padding: 10px;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.logo-container:hover{
+    transform: scale(2.05);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #c60091;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tabel {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tabel:hover {
+    transform: scale(1.4);
+}
